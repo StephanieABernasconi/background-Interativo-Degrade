@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.box-degrade{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(61, 3, 84), rgb(114, 216, 216), rgb(0, 70, 77));
+    background-size: 500% 100%;
+    animation: degrade-animado 2.5s infinite alternate;
+
+}
+.box-degrade h1{
+color: antiquewhite;
+font-weight: lighter;
+font-size: 100px;
+padding: 100px;
+align-items: center;
+justify-content: center;
+}
+
+.box-degrade h2{
+    color: transparent;
+    font-weight: lighter;
+    font-size: 10px;
+    
+    }
+
+.box-degrade:hover{
+    background-image: linear-gradient(50deg, rgb(61, 3, 84), rgb(114, 216, 216), rgb(0, 70, 77));
+    animation: degrade-animado 1s infinite alternate;
+
+}
+.box-degrade:hover h1{
+    
+color: antiquewhite;
+font-weight: lighter;
+font-size: 90px;
+padding: 100px;
+align-items: center;
+justify-content: center;
+    
+    }
+.box-degrade:hover h2{
+    
+    color: rgb(231, 225, 233);
+    font-weight: lighter;
+    font-size: 60px;
+    
+    }
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0% ;
+    }
+    
+    100%{
+        background-position-x: 100%;
+    }
+}
